@@ -25,8 +25,65 @@ display:none;
 display:block;
 cursor:pointer;
 }
+@media (max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+.nav-menu{
+display:none;
+flex-direction:column;
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:#1a1a1a;
+padding:20px;
+}
+
+.nav-menu a{
+color:white;
+padding:10px 0;
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.nav-menu.active{
+display:flex;
+}
+
+/* HERO FIX */
+
+.hero{
+padding-top:100px;
+text-align:center;
+}
+
+.hero h1{
+font-size:34px;
+line-height:1.2;
+}
+
+.stats{
+flex-direction:column;
+gap:20px;
+}
+
+.product-container{
+flex-direction:column;
+padding:20px;
+}
+
+.product-gallery img{
+width:100%;
+}
+
+.subscription{
+width:100%;
+}
 
 }
+
 @media (max-width:900px){
 
 .collection-container{
