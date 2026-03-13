@@ -55,6 +55,21 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 }
+/* HAMBURGER */
+
+.hamburger{
+display:none;
+flex-direction:column;
+cursor:pointer;
+gap:5px;
+}
+
+.hamburger span{
+width:25px;
+height:3px;
+background:#1d3557;
+display:block;
+}
 
 /* LOGO */
 
@@ -106,6 +121,34 @@ cursor:pointer;
 .shop-btn:hover{
 transform:scale(1.05);
 transition:0.3s;
+}
+/* MOBILE NAVBAR */
+
+@media (max-width:768px){
+
+.nav-menu{
+display:none;
+flex-direction:column;
+background:white;
+position:absolute;
+top:80px;
+left:0;
+width:100%;
+padding:20px;
+}
+
+.nav-menu.active{
+display:flex;
+}
+
+.hamburger{
+display:flex;
+}
+
+.nav-right{
+display:none;
+}
+
 }
 
 /* HERO CONTENT */
